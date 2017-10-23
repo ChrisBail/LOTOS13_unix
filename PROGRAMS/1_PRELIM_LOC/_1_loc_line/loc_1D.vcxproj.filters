@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="raznoe">
+      <UniqueIdentifier>{cfbc8c25-5a0b-4a39-84f0-845526909966}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="locate_1d">
+      <UniqueIdentifier>{3031ced7-7005-4ab7-8646-5273a470bb98}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\subr\raznoe\int_best.f90">
+      <Filter>raznoe</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\subr\velocity\dv_mod_2d.f90">
+      <Filter>locate_1d</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\subr\locate\goal_fun_lin.f90">
+      <Filter>locate_1d</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\subr\trace_2d_iso\streight_line.f90">
+      <Filter>locate_1d</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\subr\velocity\velocity.f90">
+      <Filter>locate_1d</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\subr\velocity\vrefmod.f90">
+      <Filter>locate_1d</Filter>
+    </CustomBuild>
+    <CustomBuild Include="loc_1D.f90" />
+  </ItemGroup>
+</Project>

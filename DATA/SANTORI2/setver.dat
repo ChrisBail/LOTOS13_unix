@@ -1,0 +1,12 @@
+2	Number of different sections
+25.307432171202, 36.220112811791
+25.518106958617, 36.559910856009
+25.26892172619, 36.491951247166
+25.547556122449, 36.306194982993
+3 distance from section for visualization of events
+1.0			dx
+0 20 1		zmin,zmax,dz
+5               Marks for indication of position of section
+1		Distance to the nearest node
+0		Smoothing factor
+1		If 0, no sources are visualized

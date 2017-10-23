@@ -1,0 +1,15 @@
+------ Project Conversion started on 09.03.2011 at 17:34 - Project: loc_1D ------
+
+Creating configuration context: loc_1D - Win32 Release...
+
+Warn:nofileopt option not supported - option ignored
+
+Creating configuration context: loc_1D - Win32 Debug...
+
+Warn:argument_checking option not supported - option ignored
+
+Warn:nofileopt option not supported - option ignored
+
+loc_1D project conversion succeeded
+
+Project Conversion log was saved at "file://D:\science\TOMO\PASSIVE_TOMO_3D\PROG\0_loc_prelim\loc_1D_log.txt"

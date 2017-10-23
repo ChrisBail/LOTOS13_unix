@@ -1,0 +1,7 @@
+4				Number of sections
+10 30 50 80	Depths of sections
+-2.0 2 0.02 -2 2 0.02 fi1, fi2, dfi, tet1, tet2, dtet
+10		distance from nearest node
+0		Smoothing factor1		Number of summary
+
+

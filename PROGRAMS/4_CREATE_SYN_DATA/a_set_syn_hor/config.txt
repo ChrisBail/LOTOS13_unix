@@ -1,0 +1,32 @@
+         800         800
+ _______ Size of the picture in pixels (nx,ny)
+   139.0000       143.0000    
+ _______ Physical coordinates along X (xmin,xmax)
+   36.00000       40.00000    
+ _______ Physical coordinates along Y (ymin,ymax)
+  0.5000000      0.5000000    
+ _______ Spacing of ticks on axes (dx,dy)
+..\..\..\PICS\TOHOKU_1\HOR_SYN1\SYN\hor_syn_vpvs 1.png
+ _______ Path of the output picture
+ Vp/Vs ratio, depth=   10
+ _______ Title of the plot on the upper axe
+           1
+ _______ Number of layers
+********************************************
+           1
+ _______ Key of the layer (1: contour, 2: line, 3:dots)
+..\..\..\TMP_files\hor\syn_vpvs_ 1.grd
+ _______ Location of the GRD file
+blue_brown.scl      
+ _______ Scale for visualization
+   1.550000       1.850000    
+ _______ scale diapason
+********************************************
+           2
+ _______ Key of the layer (1: contour, 2: line, 3:dots)
+..\..\..\DATA\TOHOKU_1\map\coastal_line.bln
+ _______ Location of the BLN file
+           3
+ _______ Thickness of line in pixels
+           0           0           0
+ _______ RGB color

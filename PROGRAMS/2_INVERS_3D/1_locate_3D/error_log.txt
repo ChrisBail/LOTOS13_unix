@@ -1,0 +1,4361 @@
+cp ../../subr/ini3D/ini3D_xyz_lin_v.f90 ini3D_xyz_lin_v.f90
+gfortran -c -O3 -g -Wall -fbacktrace ini3D_xyz_lin_v.f90
+ini3D_xyz_lin_v.f90:32:1:
+
+  x1=xx1+(ix-1)*dxx
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+ini3D_xyz_lin_v.f90:33:1:
+
+  x2=xx1+ix*dxx
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+ini3D_xyz_lin_v.f90:34:1:
+
+  if((xxx-x1)*(xxx-x2).le.0) goto 10
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+ini3D_xyz_lin_v.f90:38:5:
+
+ pause
+     1
+Warning: Deleted feature: PAUSE statement at (1)
+ini3D_xyz_lin_v.f90:43:1:
+
+  y1=yy1+(iy-1)*dyy
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+ini3D_xyz_lin_v.f90:44:1:
+
+  y2=yy1+iy*dyy
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+ini3D_xyz_lin_v.f90:45:1:
+
+  if((yyy-y1)*(yyy-y2).le.0) goto 11
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+ini3D_xyz_lin_v.f90:49:5:
+
+ pause
+     1
+Warning: Deleted feature: PAUSE statement at (1)
+ini3D_xyz_lin_v.f90:54:1:
+
+  z1=zz1+(iz-1)*dzz
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+ini3D_xyz_lin_v.f90:55:1:
+
+  z2=zz1+iz*dzz
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+ini3D_xyz_lin_v.f90:56:1:
+
+  if((zzz-z1)*(zzz-z2).le.0) goto 12
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+ini3D_xyz_lin_v.f90:60:5:
+
+ pause
+     1
+Warning: Deleted feature: PAUSE statement at (1)
+ini3D_xyz_lin_v.f90:3:11:
+
+ real fx3(3),fy3(3),fz3(3),xabc(3),yabc(3),zabc(3)
+           1
+Warning: Unused variable ‘fx3’ declared at (1) [-Wunused-variable]
+ini3D_xyz_lin_v.f90:3:18:
+
+ real fx3(3),fy3(3),fz3(3),xabc(3),yabc(3),zabc(3)
+                  1
+Warning: Unused variable ‘fy3’ declared at (1) [-Wunused-variable]
+ini3D_xyz_lin_v.f90:3:25:
+
+ real fx3(3),fy3(3),fz3(3),xabc(3),yabc(3),zabc(3)
+                         1
+Warning: Unused variable ‘fz3’ declared at (1) [-Wunused-variable]
+ini3D_xyz_lin_v.f90:4:16:
+
+ integer ixabc(3),iyabc(3),izabc(3)
+                1
+Warning: Unused variable ‘ixabc’ declared at (1) [-Wunused-variable]
+ini3D_xyz_lin_v.f90:4:25:
+
+ integer ixabc(3),iyabc(3),izabc(3)
+                         1
+Warning: Unused variable ‘iyabc’ declared at (1) [-Wunused-variable]
+ini3D_xyz_lin_v.f90:4:34:
+
+ integer ixabc(3),iyabc(3),izabc(3)
+                                  1
+Warning: Unused variable ‘izabc’ declared at (1) [-Wunused-variable]
+ini3D_xyz_lin_v.f90:3:33:
+
+ real fx3(3),fy3(3),fz3(3),xabc(3),yabc(3),zabc(3)
+                                 1
+Warning: Unused variable ‘xabc’ declared at (1) [-Wunused-variable]
+ini3D_xyz_lin_v.f90:3:41:
+
+ real fx3(3),fy3(3),fz3(3),xabc(3),yabc(3),zabc(3)
+                                         1
+Warning: Unused variable ‘yabc’ declared at (1) [-Wunused-variable]
+ini3D_xyz_lin_v.f90:3:49:
+
+ real fx3(3),fy3(3),fz3(3),xabc(3),yabc(3),zabc(3)
+                                                 1
+Warning: Unused variable ‘zabc’ declared at (1) [-Wunused-variable]
+ini3D_xyz_lin_v.f90:87:0:
+
+ v1=v11+((v11-v12)/(z1-z2))*(zzz-z1)
+ ^
+Warning: ‘z2’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+ini3D_xyz_lin_v.f90:54:0:
+
+  z1=zz1+(iz-1)*dzz
+ ^
+Warning: ‘z1’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+ini3D_xyz_lin_v.f90:92:0:
+
+ ini3D_xyz_lin_v=v1+((v1-v2)/(y1-y2))*(yyy-y1) !CB
+ ^
+Warning: ‘y2’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+ini3D_xyz_lin_v.f90:92:0: Warning: ‘y1’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+ini3D_xyz_lin_v.f90:82:0:
+
+ v11=v111+((v111-v211)/(x1-x2))*(xxx-x1)
+ ^
+Warning: ‘x2’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+ini3D_xyz_lin_v.f90:82:0: Warning: ‘x1’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+cp ../../subr/ini3D/locate_ini3D.f90 locate_ini3D.f90
+gfortran -c -O3 -g -Wall -fbacktrace locate_ini3D.f90
+locate_ini3D.f90:47:17:
+
+ read(1,'(a8)')ar  ! code of the area
+                 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:48:17:
+
+ read(1,'(a8)')md  ! code of the area
+                 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:49:14:
+
+ read(1,*)iter  ! code of the grid
+              1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:68:5:
+
+ pause
+     1
+Warning: Deleted feature: PAUSE statement at (1)
+locate_ini3D.f90:89:1:
+
+      read(1,'(a8)',end=553)line
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:90:1:
+
+      if(line.eq.'AREA_CEN') goto 554
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:94:9:
+
+     pause
+         1
+Warning: Deleted feature: PAUSE statement at (1)
+locate_ini3D.f90:113:1:
+
+  read(1,'(a8)',end=573)line
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:114:1:
+
+  if(line.eq.'ORIENTAT') goto 574
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:118:5:
+
+ pause
+     1
+Warning: Deleted feature: PAUSE statement at (1)
+locate_ini3D.f90:128:1:
+
+  read(1,'(a8)',end=583)line
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:129:1:
+
+  if(line.eq.'LOC_PARA') goto 584
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:133:5:
+
+ pause
+     1
+Warning: Deleted feature: PAUSE statement at (1)
+locate_ini3D.f90:136:10:
+
+ read(1,*) ! Parameters for bending:
+          1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:142:10:
+
+ read(1,*) ! Parameters for location:
+          1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:143:20:
+
+ read(1,*)dist_limit !=100
+                    1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:144:20:
+
+ read(1,*)n_pwr_dist !=1
+                    1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:145:17:
+
+ read(1,*)ncyc_av !=10
+                 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:187:1:
+
+  write(gr,'(i1)')iqgr
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:188:1:
+
+  open(2,file='../../../DATA/'//ar//'/'//md//'/data/stcor_p_'//it0//gr//'.dat')
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:189:1:
+
+  do ist=1,nst
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:190:1:
+
+      read(2,*,end=332)stcor
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:191:1:
+
+      statinv(1,ist) = statinv(1,ist)+stcor
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:192:1:
+
+  end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:193:1:
+
+  close(2)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:196:1:
+
+  do ist=1,nst
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:197:1:
+
+      read(2,*,end=333)stcor
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:198:1:
+
+      statinv(2,ist) = statinv(2,ist)+stcor
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:199:1:
+
+  end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:200:1:
+
+  close(2)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:203:8:
+
+     333 continue
+        1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:208:1:
+
+  do igr=1,nornt
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:209:1:
+
+   write(gr,'(i1)')igr
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:210:1:
+
+   iun=30+igr
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:211:1:
+
+   open(iun,file='../../../DATA/'//ar//'/'//md//'/data/ztcor_'//it0//gr//'.dat')
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:212:1:
+
+  end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:245:3:
+
+ 21 continue
+   1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:349:8:
+
+     331 continue
+        1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:384:56:
+
+         call trace_bending(xzt,yzt,zzt,xst,yst,zst,ips, tout)
+                                                        1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:480:1:
+
+              if(mod(nzt,ifreq).eq.0)write(*,*)' i1=',i1,' ips1=',ipskr(i1),' i2=',i2,' ips2=',ipskr(i2)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:487:1:
+
+              aaa(i1,ii)=(aaa(i1,ii)-aaa(i2,ii))
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:493:22:
+
+     call dispers(dt3, disp3,aver3,nkr3,ank)
+                      1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:505:1:
+
+          wdist = 1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:507:1:
+
+          wdist = (dist_limit/(ddd))**n_pwr_dist
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:514:1:
+
+          aaa(i1,ii)=aaa(i1,ii)*wdist*ccc
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:535:1:
+
+          aaa(nk,i4)=atmp(ik,i4)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:592:1:
+
+      nk=nk+1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:593:1:
+
+      reg=r_hor
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:594:1:
+
+      if(i4.eq.3)reg=r_ver
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:595:1:
+
+      if(i4.eq.4)reg=r_time
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:596:1:
+
+      aaa(nk,i4)=reg
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:616:1:
+
+          dt=dt+atmp(i,j)*xxx(j)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:680:1:
+
+          aaa(i,3)=1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:702:1:
+
+      dt=0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:703:1:
+
+      do j=1,3
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:704:1:
+
+       dt=dt+atmp(i,j)*xxx(j)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:705:1:
+
+      end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:706:1:
+
+      disp1=disp1+abs(btmp(i))
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:707:1:
+
+      disp2=disp2+abs(btmp(i)-dt)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1080:49:
+
+         write(11,*)xmark(ivert,i),ymark(ivert,i) !,smark(i)
+                                                 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1098:8:
+
+     201 continue
+        1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1113:8:
+
+     203 continue
+        1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1166:16:
+
+     write(14,*) 1
+                1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1171:16:
+
+     write(14,*) 3
+                1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1176:16:
+
+     write(14,*) 1
+                1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1178:16:
+
+     write(14,*) 4
+                1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1180:16:
+
+     write(14,*) 255,0,0
+                1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1185:16:
+
+     write(14,*) 3
+                1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1190:16:
+
+     write(14,*) 2
+                1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1192:16:
+
+     write(14,*) 5
+                1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1194:16:
+
+     write(14,*) 0,0,255
+                1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1198:16:
+
+     write(14,*) 2
+                1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1203:16:
+
+     write(14,*) 3
+                1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1205:16:
+
+     write(14,*) 0,0,0
+                1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1212:20:
+
+         write(14,*) 2
+                    1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1217:20:
+
+         write(14,*) 1
+                    1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1219:20:
+
+         write(14,*) 0,0,0
+                    1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1265:4:
+
+ 431 continue
+    1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1277:4:
+
+ 433 continue
+    1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1326:12:
+
+ write(14,*) 1
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1332:12:
+
+ write(14,*) 3
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1337:12:
+
+ write(14,*) 1
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1339:12:
+
+ write(14,*) 4
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1341:12:
+
+ write(14,*) 255,0,0
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1346:12:
+
+ write(14,*) 3
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1351:12:
+
+ write(14,*) 2
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1353:12:
+
+ write(14,*) 5
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1355:12:
+
+ write(14,*) 0,0,255
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1360:16:
+
+     write(14,*) 2
+                1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1365:16:
+
+     write(14,*) 1
+                1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1367:16:
+
+     write(14,*) 0,0,0
+                1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1374:12:
+
+ write(14,*) 2
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1379:12:
+
+ write(14,*) 3
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1381:12:
+
+ write(14,*) 100,0,0
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1388:12:
+
+ write(14,*) 2
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1393:12:
+
+ write(14,*) 3
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1395:12:
+
+ write(14,*) 0,0,0
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1401:1:
+
+  write(ver,'(i2)')iver
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1403:1:
+
+  write(14,59)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1404:1:
+
+  write(14,*) 2
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1405:1:
+
+  write(14,*)'_______ Key of the layer (1: contour, 2: line, 3:dots)'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1406:1:
+
+  write(14,154)ver
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1408:1:
+
+  write(14,*)'_______ Location of the BLN file'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1409:1:
+
+  write(14,*) 2
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1410:1:
+
+  write(14,*)'_______ Thickness of line in pixels'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1411:1:
+
+  write(14,*) 0,0,0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1412:1:
+
+  write(14,*)'_______ RGB color'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1414:1:
+
+  write(14,59)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1415:1:
+
+  write(14,*) 3
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1416:1:
+
+  write(14,*)'_______ Key of the layer (1: contour, 2: line, 3:dots)'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1417:1:
+
+  write(14,156)ver
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1419:1:
+
+  write(14,*)'_______ Location of the DAT file'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1420:1:
+
+  write(14,*) 1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1421:1:
+
+  write(14,*)'_______ Symbol (1: circle, 2: square)'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1422:1:
+
+  write(14,*) 6
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1423:1:
+
+  write(14,*)'_______ Size of dots in pixels'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1424:1:
+
+  write(14,*) 0,0,0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1425:1:
+
+  write(14,*)'_______ RGB color'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1427:1:
+
+  xa=xmark(iver,1)+dxmark
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1428:1:
+
+  ya=ymark(iver,1)+dymark
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1430:1:
+
+  write(14,59)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1431:1:
+
+  write(14,*) 5
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1432:1:
+
+  write(14,*)'_______ Key of the layer (1: contour, 2: line, 3:dots)'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1433:1:
+
+  write(14,756)iver
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1435:1:
+
+  write(14,*)'_______ Text to output'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1436:1:
+
+  write(14,*) xa,ya
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1437:1:
+
+  write(14,*)'_______ Coordinates'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1438:1:
+
+  write(14,*) 1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1439:1:
+
+  write(14,*)'_______ Type (1: Arial, 2: Times New Romans)'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1440:1:
+
+  write(14,*) 12
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1441:1:
+
+  write(14,*)'_______ Size'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1442:1:
+
+  write(14,*) 0,0,0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1443:1:
+
+  write(14,*)'_______ RGB color'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1445:1:
+
+  xb=xmark(iver,nmark(iver))+dxmark
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1446:1:
+
+  yb=ymark(iver,nmark(iver))+dymark
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1448:1:
+
+  write(14,59)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1449:1:
+
+  write(14,*) 5
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1450:1:
+
+  write(14,*)'_______ Key of the layer (1: contour, 2: line, 3:dots)'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1451:1:
+
+  write(14,757)iver
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1453:1:
+
+  write(14,*)'_______ Text to output'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1454:1:
+
+  write(14,*) xb,yb
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1455:1:
+
+  write(14,*)'_______ Coordinates'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1456:1:
+
+  write(14,*) 1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1457:1:
+
+  write(14,*)'_______ Type (1: Arial, 2: Times New Romans)'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1458:1:
+
+  write(14,*) 12
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1459:1:
+
+  write(14,*)'_______ Size'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1460:1:
+
+  write(14,*) 0,0,0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1461:1:
+
+  write(14,*)'_______ RGB color'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1463:1:
+
+  do imark=2,nmark(iver)-2
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1465:1:
+
+   xx=xmark(iver,imark)+dxmark
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1466:1:
+
+   yy=ymark(iver,imark)+dymark
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1467:1:
+
+   isss=smark(iver,imark)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1469:1:
+
+   write(14,59)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1470:1:
+
+   write(14,*) 5
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1471:1:
+
+   write(14,*)'_______ Key of the layer (1: contour, 2: line, 3:dots)'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1472:1:
+
+   write(14,'(i4)')isss
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1473:1:
+
+   write(14,*)'_______ Text to output'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1474:1:
+
+   write(14,*) xx,yy
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1475:1:
+
+   write(14,*)'_______ Coordinates'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1476:1:
+
+   write(14,*) 1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1477:1:
+
+   write(14,*)'_______ Type (1: Arial, 2: Times New Romans)'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1478:1:
+
+   write(14,*) 10
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1479:1:
+
+   write(14,*)'_______ Size'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1480:1:
+
+   write(14,*) 0,0,0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1481:1:
+
+   write(14,*)'_______ RGB color'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:1483:1:
+
+  end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+locate_ini3D.f90:935:4:
+
+ 1313 continue
+    1
+Warning: Label 1313 at (1) defined but not used
+locate_ini3D.f90:1020:10:
+
+     nxsec=dist/dxsec0+1
+          1
+Warning: Possible change of value in conversion from REAL(4) to INTEGER(4) at (1) [-Wconversion]
+locate_ini3D.f90:1046:7:
+
+     do sss=0.,dist,dsmark
+       1
+Warning: Deleted feature: Loop variable at (1) must be integer
+locate_ini3D.f90:1046:11:
+
+     do sss=0.,dist,dsmark
+           1
+Warning: Deleted feature: Start expression in DO loop at (1) must be integer
+locate_ini3D.f90:1046:14:
+
+     do sss=0.,dist,dsmark
+              1
+Warning: Deleted feature: End expression in DO loop at (1) must be integer
+locate_ini3D.f90:1046:19:
+
+     do sss=0.,dist,dsmark
+                   1
+Warning: Deleted feature: Step expression in DO loop at (1) must be integer
+locate_ini3D.f90:1467:7:
+
+   isss=smark(iver,imark)
+       1
+Warning: Possible change of value in conversion from REAL(4) to INTEGER(4) at (1) [-Wconversion]
+locate_ini3D.f90:8:32:
+
+ real www(4),vvv(4,4),dttest(500)
+                                1
+Warning: Unused variable ‘dttest’ declared at (1) [-Wunused-variable]
+locate_ini3D.f90:2:14:
+
+ character*1 ps,itt,it0,gr
+              1
+Warning: Unused variable ‘ps’ declared at (1) [-Wunused-variable]
+locate_ini3D.f90:17:28:
+
+ character*5 stacod(500),stac
+                            1
+Warning: Unused variable ‘stac’ declared at (1) [-Wunused-variable]
+locate_ini3D.f90:297:0:
+
+         fff=xxt; ttt=yzt
+ ^
+Warning: ‘xxt’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+locate_ini3D.f90:561:0:
+
+         dzcur=dzcur/2.
+ ^
+Warning: ‘dzcur’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+locate_ini3D.f90:560:0:
+
+         dycur=dycur/2.
+ ^
+Warning: ‘dycur’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+locate_ini3D.f90:559:0:
+
+         dxcur=dxcur/2.
+ ^
+Warning: ‘dxcur’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+cp ../../subr/ini3D/read_3D_ini_v.f90 read_3D_ini_v.f90
+gfortran -c -O3 -g -Wall -fbacktrace read_3D_ini_v.f90
+read_3D_ini_v.f90:56:1:
+
+  read(1,end=13)xx10,nxx0,dxx0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:58:1:
+
+  if(nxx0.eq.0) cycle
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:59:1:
+
+  if(nxx0.gt.nxmax) then
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:60:1:
+
+   write(*,*)' nxx > nxmax!'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:61:1:
+
+   write(*,*)' Value of the nxx in common file "mod_3D" should be increased'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:62:1:
+
+   pause
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:62:7:
+
+   pause
+       1
+Warning: Deleted feature: PAUSE statement at (1)
+read_3D_ini_v.f90:63:1:
+
+  end if
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:64:1:
+
+  xx1=xx10
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:65:1:
+
+  nxx=nxx0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:66:1:
+
+  dxx=dxx0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:68:1:
+
+  read(1)yy1,nyy,dyy
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:70:1:
+
+  if(nyy.gt.nymax) then
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:71:1:
+
+   write(*,*)' nyy > nymax!'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:72:1:
+
+   write(*,*)' Value of the nyy in common file "mod_3D" should be increased'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:73:1:
+
+   pause
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:73:7:
+
+   pause
+       1
+Warning: Deleted feature: PAUSE statement at (1)
+read_3D_ini_v.f90:74:1:
+
+  end if
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:77:1:
+
+  read(1)zz1,nzz,dzz
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:79:1:
+
+  if(nzz.gt.nzmax) then
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:80:1:
+
+   write(*,*)' nzz > nzmax!'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:81:1:
+
+   write(*,*)' Value of the nzz in common file "mod_3D" should be increased'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:82:1:
+
+   pause
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:82:7:
+
+   pause
+       1
+Warning: Deleted feature: PAUSE statement at (1)
+read_3D_ini_v.f90:83:1:
+
+  end if
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:85:1:
+
+  do izz=1,nzz
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:87:1:
+
+  end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:88:1:
+
+  close(1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:101:3:
+
+ 13 continue
+   1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_ini_v.f90:3:14:
+
+ character*1 ps,rm
+              1
+Warning: Unused variable ‘ps’ declared at (1) [-Wunused-variable]
+read_3D_ini_v.f90:3:17:
+
+ character*1 ps,rm
+                 1
+Warning: Unused variable ‘rm’ declared at (1) [-Wunused-variable]
+cp ../../subr/3D_model/anom_3D_xyz_lin_v.f90 anom_3D_xyz_lin_v.f90
+gfortran -c -O3 -g -Wall -fbacktrace anom_3D_xyz_lin_v.f90
+anom_3D_xyz_lin_v.f90:24:1:
+
+  x1=xx1+(ix-1)*dxx
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+anom_3D_xyz_lin_v.f90:25:1:
+
+  x2=xx1+ix*dxx
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+anom_3D_xyz_lin_v.f90:26:1:
+
+  if((xxx-x1)*(xxx-x2).le.0) goto 10
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+anom_3D_xyz_lin_v.f90:30:5:
+
+ pause
+     1
+Warning: Deleted feature: PAUSE statement at (1)
+anom_3D_xyz_lin_v.f90:35:1:
+
+  y1=yy1+(iy-1)*dyy
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+anom_3D_xyz_lin_v.f90:36:1:
+
+  y2=yy1+iy*dyy
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+anom_3D_xyz_lin_v.f90:37:1:
+
+  if((yyy-y1)*(yyy-y2).le.0) goto 11
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+anom_3D_xyz_lin_v.f90:41:5:
+
+ pause
+     1
+Warning: Deleted feature: PAUSE statement at (1)
+anom_3D_xyz_lin_v.f90:46:1:
+
+  z1=zz1+(iz-1)*dzz
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+anom_3D_xyz_lin_v.f90:47:1:
+
+  z2=zz1+iz*dzz
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+anom_3D_xyz_lin_v.f90:48:1:
+
+  if((zzz-z1)*(zzz-z2).le.0) goto 12
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+anom_3D_xyz_lin_v.f90:52:5:
+
+ pause
+     1
+Warning: Deleted feature: PAUSE statement at (1)
+anom_3D_xyz_lin_v.f90:3:11:
+
+ real fx3(3),fy3(3),fz3(3),xabc(3),yabc(3),zabc(3)
+           1
+Warning: Unused variable ‘fx3’ declared at (1) [-Wunused-variable]
+anom_3D_xyz_lin_v.f90:3:18:
+
+ real fx3(3),fy3(3),fz3(3),xabc(3),yabc(3),zabc(3)
+                  1
+Warning: Unused variable ‘fy3’ declared at (1) [-Wunused-variable]
+anom_3D_xyz_lin_v.f90:3:25:
+
+ real fx3(3),fy3(3),fz3(3),xabc(3),yabc(3),zabc(3)
+                         1
+Warning: Unused variable ‘fz3’ declared at (1) [-Wunused-variable]
+anom_3D_xyz_lin_v.f90:4:16:
+
+ integer ixabc(3),iyabc(3),izabc(3)
+                1
+Warning: Unused variable ‘ixabc’ declared at (1) [-Wunused-variable]
+anom_3D_xyz_lin_v.f90:4:25:
+
+ integer ixabc(3),iyabc(3),izabc(3)
+                         1
+Warning: Unused variable ‘iyabc’ declared at (1) [-Wunused-variable]
+anom_3D_xyz_lin_v.f90:4:34:
+
+ integer ixabc(3),iyabc(3),izabc(3)
+                                  1
+Warning: Unused variable ‘izabc’ declared at (1) [-Wunused-variable]
+anom_3D_xyz_lin_v.f90:3:33:
+
+ real fx3(3),fy3(3),fz3(3),xabc(3),yabc(3),zabc(3)
+                                 1
+Warning: Unused variable ‘xabc’ declared at (1) [-Wunused-variable]
+anom_3D_xyz_lin_v.f90:3:41:
+
+ real fx3(3),fy3(3),fz3(3),xabc(3),yabc(3),zabc(3)
+                                         1
+Warning: Unused variable ‘yabc’ declared at (1) [-Wunused-variable]
+anom_3D_xyz_lin_v.f90:3:49:
+
+ real fx3(3),fy3(3),fz3(3),xabc(3),yabc(3),zabc(3)
+                                                 1
+Warning: Unused variable ‘zabc’ declared at (1) [-Wunused-variable]
+anom_3D_xyz_lin_v.f90:77:0:
+
+ v1=v11+((v11-v12)/(z1-z2))*(zzz-z1)
+ ^
+Warning: ‘z2’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+anom_3D_xyz_lin_v.f90:46:0:
+
+  z1=zz1+(iz-1)*dzz
+ ^
+Warning: ‘z1’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+anom_3D_xyz_lin_v.f90:82:0:
+
+ anom_3D_xyz_lin_v=v1+((v1-v2)/(y1-y2))*(yyy-y1)
+ ^
+Warning: ‘y2’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+anom_3D_xyz_lin_v.f90:82:0: Warning: ‘y1’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+anom_3D_xyz_lin_v.f90:72:0:
+
+ v11=v111+((v111-v211)/(x1-x2))*(xxx-x1)
+ ^
+Warning: ‘x2’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+anom_3D_xyz_lin_v.f90:72:0: Warning: ‘x1’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+cp ../../subr/convers/flat_sph.f90 flat_sph.f90
+gfortran -c -O3 -g -Wall -fbacktrace flat_sph.f90
+cp ../../subr/convers/sph_flat.f90 sph_flat.f90
+gfortran -c -O3 -g -Wall -fbacktrace sph_flat.f90
+cp ../../subr/3D_model/read_3D_mod_v.f90 read_3D_mod_v.f90
+gfortran -c -O3 -g -Wall -fbacktrace read_3D_mod_v.f90
+read_3D_mod_v.f90:21:1:
+
+  write(ps,'(i1)')ips
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:22:1:
+
+  open(1,file='../../../DATA/'//ar//'/'//md//'/data/dv_v'//ps//it//'.dat',form='unformatted',access='stream')
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:24:1:
+
+  read(1,end=13)xx10,nxx0,dxx0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:26:1:
+
+  if(nxx0.eq.0) cycle
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:27:1:
+
+  if(nxx0.gt.nxmax) then
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:28:1:
+
+   write(*,*)' nxx > nxmax!'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:29:1:
+
+   write(*,*)' Value of the nxx in common file "mod_3D" should be increased'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:30:1:
+
+   pause
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:30:7:
+
+   pause
+       1
+Warning: Deleted feature: PAUSE statement at (1)
+read_3D_mod_v.f90:31:1:
+
+  end if
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:32:1:
+
+  xx1=xx10
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:33:1:
+
+  nxx=nxx0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:34:1:
+
+  dxx=dxx0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:36:1:
+
+  read(1)yy1,nyy,dyy
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:37:1:
+
+  if(nyy.gt.nymax) then
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:38:1:
+
+   write(*,*)' nyy > nymax!'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:39:1:
+
+   write(*,*)' Value of the nyy in common file "mod_3D" should be increased'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:40:1:
+
+   pause
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:40:7:
+
+   pause
+       1
+Warning: Deleted feature: PAUSE statement at (1)
+read_3D_mod_v.f90:41:1:
+
+  end if
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:44:1:
+
+  read(1)zz1,nzz,dzz
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:45:1:
+
+  if(nzz.gt.nzmax) then
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:46:1:
+
+   write(*,*)' nzz > nzmax!'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:47:1:
+
+   write(*,*)' Value of the nzz in common file "mod_3D" should be increased'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:48:1:
+
+   pause
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:48:7:
+
+   pause
+       1
+Warning: Deleted feature: PAUSE statement at (1)
+read_3D_mod_v.f90:49:1:
+
+  end if
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:51:1:
+
+  do izz=1,nzz
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:52:1:
+
+   read(1)((dv_3D(ips,ixx,iyy,izz),ixx=1,nxx),iyy=1,nyy)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:53:1:
+
+  end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:54:1:
+
+  close(1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:60:3:
+
+ 13 continue
+   1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_3D_mod_v.f90:3:17:
+
+ character*1 ps,rm,it 
+                 1
+Warning: Unused variable ‘rm’ declared at (1) [-Wunused-variable]
+cp ../../subr/ini3D/velocity.f90 velocity.f90
+gfortran -c -O3 -g -Wall -fbacktrace velocity.f90
+cp ../../subr/rays_locate/vrefmod.f90 vrefmod.f90
+gfortran -c -O3 -g -Wall -fbacktrace vrefmod.f90
+vrefmod.f90:11:9:
+
+     pause
+         1
+Warning: Deleted feature: PAUSE statement at (1)
+cp ../../subr/convers/decsf.f90 decsf.f90
+gfortran -c -O3 -g -Wall -fbacktrace decsf.f90
+decsf.f90:13:19:
+
+ if(sqr.lt.0.) then 
+                   1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+decsf.f90:14:1:
+
+  write(*,*)' problem in DECSF:'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+decsf.f90:15:1:
+
+  write(*,*)' x=',x,' y=',y,' zz=',zz
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+decsf.f90:16:1:
+
+  pause
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+decsf.f90:16:6:
+
+  pause
+      1
+Warning: Deleted feature: PAUSE statement at (1)
+decsf.f90:26:1:
+
+  fi=fi0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+decsf.f90:28:1:
+
+  IF(X1.GT.0..AND.Y1.GT.0.)PA=0.
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+decsf.f90:29:1:
+
+  IF(X1.LT.0.)PA=-PI
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+decsf.f90:30:1:
+
+  IF(X1.GT.0..AND.Y1.LT.0.)PA=2.*PI
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+decsf.f90:31:1:
+
+  ff=atan(y1/x1)/per
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+decsf.f90:32:1:
+
+  FI=fi0-(ff+PA/PER)+90.
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+cp ../../subr/rays_locate/dispers.f90 dispers.f90
+gfortran -c -O3 -g -Wall -fbacktrace dispers.f90
+dispers.f90:1:24:
+
+ subroutine dispers(dtk, disp,aver,nk,goal)
+                        1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+dispers.f90:60:1:
+
+      aaa=0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+dispers.f90:62:1:
+
+      aaa=1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+dispers.f90:64:1:
+
+      aaa=(dt-res_loc2)/(res_loc1-res_loc2)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+dispers.f90:86:1:
+
+  if(ngood(i).eq.0) cycle
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+dispers.f90:87:1:
+
+  nk=nk+1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+dispers.f90:88:1:
+
+  dt=dtk(i)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+dispers.f90:89:1:
+
+  if(ipskr(i).ne.3) dt=(dtk(i)-aver)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+dispers.f90:90:1:
+
+  disp=disp+abs(dt)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+dispers.f90:4:19:
+
+ integer ngood2(500)
+                   1
+Warning: Unused variable ‘ngood2’ declared at (1) [-Wunused-variable]
+dispers.f90:45:0:
+
+         ngood(imax)=0
+ ^
+Warning: ‘imax’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+cp ../../subr/other/int_best.f90 int_best.f90
+gfortran -c -O3 -g -Wall -fbacktrace int_best.f90
+cp ../../subr/invers/inv_svd_simple.f90 inv_svd_simple.f90
+gfortran -c -O3 -g -Wall -fbacktrace inv_svd_simple.f90
+inv_svd_simple.f90:7:1:
+
+  S=0.
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:8:1:
+
+  IF(W(J).NE.0.)THEN
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:9:1:
+
+   DO I=1,M
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:10:1:
+
+    S=S+U(I,J)*B(I)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:11:1:
+
+   end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:12:1:
+
+   S=S/W(J)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:13:1:
+
+  ENDIF
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:14:1:
+
+  TMP(J)=S
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:17:1:
+
+  S=0.
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:18:1:
+
+  DO JJ=1,N
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:19:1:
+
+   S=S+V(J,JJ)*TMP(JJ)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:20:1:
+
+  end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:21:1:
+
+  X(J)=S
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:37:1:
+
+  L=I+1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:38:1:
+
+  RV1(I)=SCALE*G
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:39:1:
+
+  G=0.0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:40:1:
+
+  S=0.0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:41:1:
+
+  SCALE=0.0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:43:1:
+
+  IF (I.LE.M) THEN
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:44:1:
+
+   do K=I,M
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:45:1:
+
+    SCALE=SCALE+ABS(A(K,I))
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:46:1:
+
+   end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:47:1:
+
+   IF (SCALE.NE.0.0) THEN
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:48:1:
+
+    DO K=I,M
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:49:1:
+
+     A(K,I)=A(K,I)/SCALE
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:50:1:
+
+     S=S+A(K,I)*A(K,I)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:51:1:
+
+    end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:52:1:
+
+    F=A(I,I)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:53:1:
+
+    G=-SIGN(SQRT(S),F)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:54:1:
+
+    H=F*G-S
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:55:1:
+
+    A(I,I)=F-G
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:56:1:
+
+    IF (I.NE.N) THEN
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:57:1:
+
+     DO J=L,N
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:58:1:
+
+      S=0.0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:59:1:
+
+      DO K=I,M
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:60:1:
+
+       S=S+A(K,I)*A(K,J)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:61:1:
+
+      end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:62:1:
+
+      F=S/H
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:63:1:
+
+      DO K=I,M
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:64:1:
+
+       A(K,J)=A(K,J)+F*A(K,I)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:65:1:
+
+      end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:66:1:
+
+     end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:67:1:
+
+    ENDIF
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:69:1:
+
+    DO K= I,M
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:70:1:
+
+      A(K,I)=SCALE*A(K,I)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:71:1:
+
+    end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:72:1:
+
+   ENDIF
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:73:1:
+
+  ENDIF
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:75:1:
+
+  W(I)=SCALE *G
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:76:1:
+
+  G=0.0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:77:1:
+
+  S=0.0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:78:1:
+
+  SCALE=0.0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:79:1:
+
+  IF ((I.LE.M).AND.(I.NE.N)) THEN
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:80:1:
+
+   DO K=L,N
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:81:1:
+
+    SCALE=SCALE+ABS(A(I,K))
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:82:1:
+
+   end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:83:1:
+
+   IF (SCALE.NE.0.0) THEN
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:84:1:
+
+    DO K=L,N
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:85:1:
+
+     A(I,K)=A(I,K)/SCALE
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:86:1:
+
+     S=S+A(I,K)*A(I,K)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:87:1:
+
+    end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:88:1:
+
+    F=A(I,L)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:89:1:
+
+    G=-SIGN(SQRT(S),F)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:90:1:
+
+    H=F*G-S
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:91:1:
+
+    A(I,L)=F-G
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:92:1:
+
+    DO K=L,N
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:93:1:
+
+     RV1(K)=A(I,K)/H
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:94:1:
+
+    end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:95:1:
+
+    IF (I.NE.M) THEN
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:96:1:
+
+    DO J=L,M
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:97:1:
+
+     S=0.0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:98:1:
+
+     DO K=L,N
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:99:1:
+
+      S=S+A(J,K)*A(I,K)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:100:1:
+
+     end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:101:1:
+
+     DO K=L,N
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:102:1:
+
+      A(J,K)=A(J,K)+S*RV1(K)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:103:1:
+
+     end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:104:1:
+
+    end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:105:1:
+
+    ENDIF
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:106:1:
+
+    DO K=L,N
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:107:1:
+
+    A(I,K)=SCALE*A(I,K)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:108:1:
+
+    end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:109:1:
+
+   ENDIF
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:110:1:
+
+  ENDIF
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:111:1:
+
+  ANORM=MAX(ANORM,(ABS(W(I))+ABS(RV1(I))))
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:115:1:
+
+  IF (I.LT.N) THEN
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:116:1:
+
+   IF (G.NE.0.0) THEN
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:117:1:
+
+    DO J=L,N
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:118:1:
+
+     V(J,I)=(A(I,J)/A(I,L))/G
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:119:1:
+
+    end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:120:1:
+
+    DO J=L,N
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:121:1:
+
+     S=0.0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:123:1:
+
+     DO K=L,N
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:124:1:
+
+      S=S+A(I,K)*V(K,J)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:125:1:
+
+     end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:127:1:
+
+     DO K=L,N
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:128:1:
+
+      V(K,J)=V(K,J)+S*V(K,I)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:129:1:
+
+     end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:131:1:
+
+    end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:132:1:
+
+   ENDIF
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:133:1:
+
+   DO J=L,N
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:134:1:
+
+    V(I,J)=0.0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:135:1:
+
+    V(J,I)=0.0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:136:1:
+
+   end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:137:1:
+
+  ENDIF
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:138:1:
+
+  V(I,I)=1.0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:139:1:
+
+  G=RV1(I)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:140:1:
+
+  L=I
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:146:1:
+
+  L=I+1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:147:1:
+
+  G=W(I)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:148:1:
+
+  IF (I.LT.N) THEN
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:149:1:
+
+   DO J=L,N
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:150:1:
+
+    A(I,J)=0.0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:151:1:
+
+   end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:152:1:
+
+  ENDIF
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:153:1:
+
+  IF (G.NE.0.0) THEN
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:154:1:
+
+   G=1.0/G
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:155:1:
+
+   IF (I.NE.N) THEN
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:156:1:
+
+    DO J=L,N
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:157:1:
+
+     S=0.0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:158:1:
+
+     DO K=L,M
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:159:1:
+
+      S=S+A(K,I)*A(K,J)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:160:1:
+
+     end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:161:1:
+
+     F=(S/A(I,I))*G
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:162:1:
+
+     DO K=I,M
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:163:1:
+
+      A(K,J)=A(K,J)+F*A(K,I)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:164:1:
+
+     end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:165:1:
+
+    end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:166:1:
+
+   ENDIF
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:167:1:
+
+   DO J=I,M
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:168:1:
+
+    A(J,I)=A(J,I)*G
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:169:1:
+
+   end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:170:1:
+
+  ELSE
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:171:1:
+
+   DO J= I,M
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:172:1:
+
+    A(J,I)=0.0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:173:1:
+
+   end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:174:1:
+
+  ENDIF
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:175:1:
+
+  A(I,I)=A(I,I)+1.0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:181:1:
+
+  DO ITS=1,30
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:182:1:
+
+   DO L=K,1,-1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:183:1:
+
+    NM=L-1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:184:1:
+
+    IF ((ABS(RV1(L))+ANORM).EQ.ANORM)  GO TO 2
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:185:1:
+
+    IF ((ABS(W(NM))+ANORM).EQ.ANORM)  GO TO 1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:186:1:
+
+   end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:190:1:
+
+   S=1.0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:191:1:
+
+   DO I=L,K
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:192:1:
+
+    F=S*RV1(I)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:193:1:
+
+    IF ((ABS(F)+ANORM).NE.ANORM) THEN
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:194:1:
+
+     G=W(I)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:195:1:
+
+     H=SQRT(F*F+G*G)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:196:1:
+
+     W(I)=H
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:197:1:
+
+     H=1.0/H
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:198:1:
+
+     C= (G*H)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:199:1:
+
+     S=-(F*H)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:200:1:
+
+     DO J=1,M
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:201:1:
+
+      Y=A(J,NM)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:202:1:
+
+      Z=A(J,I)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:203:1:
+
+      A(J,NM)=(Y*C)+(Z*S)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:204:1:
+
+      A(J,I)=-(Y*S)+(Z*C)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:205:1:
+
+     end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:206:1:
+
+    ENDIF
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:207:1:
+
+   end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:211:1:
+
+   IF (L.EQ.K) THEN
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:212:1:
+
+    IF (Z.LT.0.0) THEN
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:213:1:
+
+     W(K)=-Z
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:214:1:
+
+     DO J=1,N
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:215:1:
+
+      V(J,K)=-V(J,K)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:216:1:
+
+     end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:217:1:
+
+    ENDIF
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:218:1:
+
+    GO TO 3
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:219:1:
+
+   ENDIF
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:221:1:
+
+   X=W(L)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:222:1:
+
+   NM=K-1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:223:1:
+
+   Y=W(NM)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:224:1:
+
+   G=RV1(NM)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:225:1:
+
+   H=RV1(K)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:226:1:
+
+   F=((Y-Z)*(Y+Z)+(G-H)*(G+H))/(2.0*H*Y)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:227:1:
+
+   G=SQRT(F*F+1.0)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:228:1:
+
+   F=((X-Z)*(X+Z)+H*((Y/(F+SIGN(G,F)))-H))/X
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:229:1:
+
+   C=1.0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:230:1:
+
+   S=1.0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:231:1:
+
+   DO J=L,NM
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:232:1:
+
+    I=J+1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:233:1:
+
+    G=RV1(I)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:234:1:
+
+    Y=W(I)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:235:1:
+
+    H=S*G
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:236:1:
+
+    G=C*G
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:237:1:
+
+    Z=SQRT(F*F+H*H)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:238:1:
+
+    RV1(J)=Z
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:239:1:
+
+    C=F/Z
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:240:1:
+
+    S=H/Z
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:241:1:
+
+    F= (X*C)+(G*S)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:242:1:
+
+    G=-(X*S)+(G*C)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:243:1:
+
+    H=Y*S
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:244:1:
+
+    Y=Y*C
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:245:1:
+
+    DO NM=1,N
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:246:1:
+
+     X=V(NM,J)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:247:1:
+
+     Z=V(NM,I)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:248:1:
+
+     V(NM,J)= (X*C)+(Z*S)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:249:1:
+
+     V(NM,I)=-(X*S)+(Z*C)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:250:1:
+
+    end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:251:1:
+
+    Z=SQRT(F*F+H*H)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:252:1:
+
+    W(J)=Z
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:253:1:
+
+    IF (Z.NE.0.0) THEN
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:254:1:
+
+     Z=1.0/Z
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:255:1:
+
+     C=F*Z
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:256:1:
+
+     S=H*Z
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:257:1:
+
+    ENDIF
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:258:1:
+
+    F= (C*G)+(S*Y)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:259:1:
+
+    X=-(S*G)+(C*Y)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:260:1:
+
+    DO NM=1,M
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:261:1:
+
+     Y=A(NM,J)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:262:1:
+
+     Z=A(NM,I)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:263:1:
+
+     A(NM,J)= (Y*C)+(Z*S)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:264:1:
+
+     A(NM,I)=-(Y*S)+(Z*C)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:265:1:
+
+    end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:266:1:
+
+   end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:267:1:
+
+   RV1(L)=0.0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:268:1:
+
+   RV1(K)=F
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:269:1:
+
+   W(K)=X
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+inv_svd_simple.f90:270:1:
+
+  end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+cp ../../subr/rays_locate/read_z_limit.f90 read_z_limit.f90
+gfortran -c -O3 -g -Wall -fbacktrace read_z_limit.f90
+read_z_limit.f90:11:1:
+
+  read(1,*,end=553)line
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_z_limit.f90:12:1:
+
+  if(line.eq.'REF_PARA') goto 554
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_z_limit.f90:22:15:
+
+ read(1,*)nstep  
+               1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_z_limit.f90:24:1:
+
+  read(1,*)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_z_limit.f90:57:1:
+
+  read(1,*) flim(nar,i), tlim(nar,i)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+cp ../../subr/convers/sfdec.f90 sfdec.f90
+gfortran -c -O3 -g -Wall -fbacktrace sfdec.f90
+cp ../../subr/rays_locate/z_lim.f90 z_lim.f90
+gfortran -c -O3 -g -Wall -fbacktrace z_lim.f90
+z_lim.f90:10:1:
+
+  zmax=zmar(ian)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:13:1:
+
+  icrup=0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:14:1:
+
+  do inod=2,npar(ian)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:16:1:
+
+   f1=flim(ian,inod-1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:17:1:
+
+   f2=flim(ian,inod)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:18:1:
+
+   t1=tlim(ian,inod-1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:19:1:
+
+   t2=tlim(ian,inod)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:20:1:
+
+   if(f1.eq.f2) cycle
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:21:1:
+
+   if ((fi-f1)*(fi-f2).gt.0.) cycle
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:24:1:
+
+   if ((fi-f1).eq.0.) then
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:25:1:
+
+    in=inod
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:26:4:
+
+ 667   continue
+    1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:27:1:
+
+    if(in.gt.2) then
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:28:1:
+
+     f0=flim(ian,in-2)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:29:1:
+
+     if(f0.eq.f1) then
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:30:1:
+
+      in=in-1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:31:1:
+
+      goto 667
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:32:1:
+
+     end if
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:33:1:
+
+    else
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:34:1:
+
+     f0=flim(ian,npar(ian)-1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:35:1:
+
+    end if
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:38:1:
+
+    if ((f0-f1)*(f2-f1).gt.0.) cycle
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:39:1:
+
+   end if
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:40:1:
+
+   if ((fi-f2).eq.0.) cycle
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:41:1:
+
+   tt=t1+((t2-t1)/(f2-f1))*(fi-f1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:42:1:
+
+   if (tt.lt.tet) cycle
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:44:1:
+
+   icrup=icrup+1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:45:1:
+
+  end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:46:1:
+
+  icrup2=int(icrup/2)*2
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:48:1:
+
+  if(icrup.eq.icrup2) cycle
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:49:1:
+
+  z_lim=zmar(ian)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+z_lim.f90:50:1:
+
+  exit
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+cp ../../subr/bending/part_bending_hor.f90 part_bending_hor.f90
+gfortran -c -O3 -g -Wall -fbacktrace part_bending_hor.f90
+part_bending_hor.f90:10:1:
+
+  s1=sray(inode-1) 
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:11:1:
+
+  s2=sray(inode) 
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:12:1:
+
+  ds=s2-s1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:13:1:
+
+  scur=scur+ds
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:36:1:
+
+  x1=xray(inode-1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:37:1:
+
+  y1=yray(inode-1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:38:1:
+
+  z1=zray(inode-1) 
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:39:1:
+
+  s1=sray(inode-1) 
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:41:1:
+
+  x2=xray(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:42:1:
+
+  y2=yray(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:43:1:
+
+  z2=zray(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:44:1:
+
+  s2=sray(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:46:1:
+
+  ds=s2-s1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:47:1:
+
+  scur=scur+ds
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:50:1:
+
+  x3=xray(inode+1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:51:1:
+
+  y3=yray(inode+1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:52:1:
+
+  z3=zray(inode+1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:54:1:
+
+  sss=sss+ds
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:56:1:
+
+  d_value = val_bend * (1-(sss*sss)/(sss2*sss2))
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:60:1:
+
+  dxray(inode)= - d_value * sinb
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:61:1:
+
+  dyray(inode)=   d_value * cosb
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:62:1:
+
+  dzray(inode)= 0.
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:81:1:
+
+  x1=xtmp(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:82:1:
+
+  x2=xtmp(inode+1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:83:1:
+
+  xm=(x1+x2)/2.
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:85:1:
+
+  y1=ytmp(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:86:1:
+
+  y2=ytmp(inode+1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:87:1:
+
+  ym=(y1+y2)/2.
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:90:1:
+
+  z1=ztmp(inode) 
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:91:1:
+
+  z2=ztmp(inode+1) 
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:92:1:
+
+  zm=(z1+z2)/2.
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:95:1:
+
+  s1=sray(inode) 
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:96:1:
+
+  s2=sray(inode+1) 
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:98:1:
+
+  ds=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1)+(z2-z1)*(z2-z1))
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:99:1:
+
+  ds2=s2-s1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:102:1:
+
+  sss=sss+ds
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:103:1:
+
+  vvv=velocity (xm,ym,zm,ips)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_hor.f90:104:1:
+
+  ttt=ttt+ds/vvv
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+cp ../../subr/bending/part_bending_z.f90 part_bending_z.f90
+gfortran -c -O3 -g -Wall -fbacktrace part_bending_z.f90
+part_bending_z.f90:10:1:
+
+  s1=sray(inode-1) 
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:11:1:
+
+  s2=sray(inode) 
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:12:1:
+
+  ds=s2-s1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:13:1:
+
+  scur=scur+ds
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:27:1:
+
+  x1=xray(inode-1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:28:1:
+
+  y1=yray(inode-1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:29:1:
+
+  z1=zray(inode-1) 
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:30:1:
+
+  s1=sray(inode-1) 
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:32:1:
+
+  x2=xray(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:33:1:
+
+  y2=yray(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:34:1:
+
+  z2=zray(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:35:1:
+
+  s2=sray(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:37:1:
+
+  ds=s2-s1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:38:1:
+
+  scur=scur+ds
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:41:1:
+
+  x3=xray(inode+1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:42:1:
+
+  y3=yray(inode+1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:43:1:
+
+  z3=zray(inode+1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:45:1:
+
+  dh=sqrt((x3-x1)*(x3-x1)+(y3-y1)*(y3-y1))
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:46:1:
+
+  dist=sqrt((z3-z1)*(z3-z1)+dh*dh)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:49:1:
+
+  cosa=dh/dist
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:51:1:
+
+  if(dh.lt.0.0001) then
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:52:1:
+
+   cosb=1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:53:1:
+
+   sinb=0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:54:1:
+
+   sina=1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:55:1:
+
+  else
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:56:1:
+
+   cosb=(x3-x1)/dh
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:57:1:
+
+   sinb=(y3-y1)/dh
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:58:1:
+
+   sina=(z3-z1)/dist
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:59:1:
+
+  end if
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:61:1:
+
+  sss=sss+ds
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:63:1:
+
+  d_value = val_bend * (1-(sss*sss)/(sss2*sss2))
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:66:1:
+
+  dxray(inode)= - d_value * sina * cosb
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:67:1:
+
+  dyray(inode)= - d_value * sina * sinb
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:68:1:
+
+  dzray(inode)= d_value * cosa
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:87:1:
+
+  x1=xtmp(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:88:1:
+
+  x2=xtmp(inode+1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:89:1:
+
+  xm=(x1+x2)/2.
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:91:1:
+
+  y1=ytmp(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:92:1:
+
+  y2=ytmp(inode+1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:93:1:
+
+  ym=(y1+y2)/2.
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:96:1:
+
+  z1=ztmp(inode) 
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:97:1:
+
+  z2=ztmp(inode+1) 
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:98:1:
+
+  zm=(z1+z2)/2.
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:106:1:
+
+  ds=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1)+(z2-z1)*(z2-z1))
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:109:1:
+
+  sss=sss+ds
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:110:1:
+
+  vvv=velocity (xm,ym,zm,ips)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_bending_z.f90:111:1:
+
+  ttt=ttt+ds/vvv
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+cp ../../subr/bending/part_ray.f90 part_ray.f90
+gfortran -c -O3 -g -Wall -fbacktrace part_ray.f90
+part_ray.f90:16:1:
+
+  x1=xray(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:17:1:
+
+  x2=xray(inode+1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:19:1:
+
+  y1=yray(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:20:1:
+
+  y2=yray(inode+1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:22:1:
+
+  z1=zray(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:23:1:
+
+  z2=zray(inode+1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:25:1:
+
+  ds=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1)+(z2-z1)*(z2-z1))
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:27:1:
+
+  sss=sss+ds
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:28:1:
+
+  sray(inode+1)=sss
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:39:1:
+
+  ds=abs(sray(inode)-sA)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:40:1:
+
+  if(ds.gt.dsmin) cycle
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:41:1:
+
+  dsmin=ds
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:42:1:
+
+  n_A=inode
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:48:1:
+
+  ds=abs(sray(inode)-sB)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:49:1:
+
+  if(ds.gt.dsmin) cycle
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:50:1:
+
+  dsmin=ds
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:51:1:
+
+  n_B=inode
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:58:1:
+
+  x1=xray(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:59:1:
+
+  y1=yray(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:60:1:
+
+  z1=zray(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:61:1:
+
+  s1=sray(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:63:1:
+
+  ntmp=ntmp+1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:64:1:
+
+  xtmp(ntmp)=x1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:65:1:
+
+  ytmp(ntmp)=y1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:66:1:
+
+  ztmp(ntmp)=z1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:67:1:
+
+  stmp(ntmp)=s1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:68:1:
+
+  kod_tmp(ntmp)=inode
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+part_ray.f90:1:47:
+
+ subroutine part_ray(xzt,yzt,zzt,xst,yst,zst,ips,part1,part2)
+                                               1
+Warning: Unused dummy argument ‘ips’ at (1) [-Wunused-dummy-argument]
+part_ray.f90:1:35:
+
+ subroutine part_ray(xzt,yzt,zzt,xst,yst,zst,ips,part1,part2)
+                                   1
+Warning: Unused dummy argument ‘xst’ at (1) [-Wunused-dummy-argument]
+part_ray.f90:1:23:
+
+ subroutine part_ray(xzt,yzt,zzt,xst,yst,zst,ips,part1,part2)
+                       1
+Warning: Unused dummy argument ‘xzt’ at (1) [-Wunused-dummy-argument]
+part_ray.f90:1:39:
+
+ subroutine part_ray(xzt,yzt,zzt,xst,yst,zst,ips,part1,part2)
+                                       1
+Warning: Unused dummy argument ‘yst’ at (1) [-Wunused-dummy-argument]
+part_ray.f90:1:27:
+
+ subroutine part_ray(xzt,yzt,zzt,xst,yst,zst,ips,part1,part2)
+                           1
+Warning: Unused dummy argument ‘yzt’ at (1) [-Wunused-dummy-argument]
+part_ray.f90:1:43:
+
+ subroutine part_ray(xzt,yzt,zzt,xst,yst,zst,ips,part1,part2)
+                                           1
+Warning: Unused dummy argument ‘zst’ at (1) [-Wunused-dummy-argument]
+part_ray.f90:1:31:
+
+ subroutine part_ray(xzt,yzt,zzt,xst,yst,zst,ips,part1,part2)
+                               1
+Warning: Unused dummy argument ‘zzt’ at (1) [-Wunused-dummy-argument]
+cp ../../subr/bending/straight_line.f90 straight_line.f90
+gfortran -c -O3 -g -Wall -fbacktrace straight_line.f90
+straight_line.f90:18:1:
+
+  nodes=2
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+straight_line.f90:19:1:
+
+  ds=dstot
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+straight_line.f90:31:1:
+
+  sss = ds * (inode-1)  ! its the cumulative distance CB
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+straight_line.f90:32:1:
+
+  xray(inode) = xzt + sss * (xst-xzt)/dstot ! this a simple thales 
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+straight_line.f90:33:1:
+
+  yray(inode) = yzt + sss * (yst-yzt)/dstot
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+straight_line.f90:34:1:
+
+  zray(inode) = zzt + sss * (zst-zzt)/dstot
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+straight_line.f90:45:1:
+
+  x1=xray(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+straight_line.f90:46:1:
+
+  x2=xray(inode+1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+straight_line.f90:47:1:
+
+  xm=(x1+x2)/2.
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+straight_line.f90:49:1:
+
+  y1=yray(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+straight_line.f90:50:1:
+
+  y2=yray(inode+1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+straight_line.f90:51:1:
+
+  ym=(y1+y2)/2.
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+straight_line.f90:53:1:
+
+  z1=zray(inode)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+straight_line.f90:54:1:
+
+  z2=zray(inode+1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+straight_line.f90:55:1:
+
+  zm=(z1+z2)/2.
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+straight_line.f90:57:1:
+
+  ds=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1)+(z2-z1)*(z2-z1))
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+straight_line.f90:58:1:
+
+  vvv=velocity (xm,ym,zm,ips)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+straight_line.f90:61:1:
+
+  ttt=ttt+ds/vvv
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+straight_line.f90:62:1:
+
+  sss=sss+ds
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+straight_line.f90:13:12:
+
+ 773 nodes = dstot/ds_cur+1
+            1
+Warning: Possible change of value in conversion from REAL(4) to INTEGER(4) at (1) [-Wconversion]
+cp ../../subr/bending/trace_bending.f90 trace_bending.f90
+gfortran -c -O3 -g -Wall -fbacktrace trace_bending.f90
+trace_bending.f90:1:54:
+
+ subroutine trace_bending(xzt,yzt,zzt,xst,yst,zst,ips, tout)
+                                                      1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+trace_bending.f90:29:1:
+
+  return
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+trace_bending.f90:85:4:
+
+ 243 continue
+    1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+trace_bending.f90:127:4:
+
+ 331   continue
+    1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+trace_bending.f90:148:41:
+
+                                 goto 331 ! Try a larger shift
+                                         1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+trace_bending.f90:170:4:
+
+ 334   continue
+    1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+trace_bending.f90:85:3:
+
+ 243 continue
+   1
+Warning: Label 243 at (1) defined but not used
+trace_bending.f90:81:2:
+
+ 12 continue
+  1
+Warning: Label 12 at (1) defined but not used
+trace_bending.f90:9:17:
+
+ real xrmin2(1000),yrmin2(1000),zrmin2(1000)
+                 1
+Warning: Unused variable ‘xrmin2’ declared at (1) [-Wunused-variable]
+trace_bending.f90:9:30:
+
+ real xrmin2(1000),yrmin2(1000),zrmin2(1000)
+                              1
+Warning: Unused variable ‘yrmin2’ declared at (1) [-Wunused-variable]
+trace_bending.f90:9:43:
+
+ real xrmin2(1000),yrmin2(1000),zrmin2(1000)
+                                           1
+Warning: Unused variable ‘zrmin2’ declared at (1) [-Wunused-variable]
+trace_bending.f90:221:0:
+
+ tout=ttot
+ ^
+Warning: ‘ttot’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+cp ../../subr/synth/read_ini_model.f90 read_ini_model.f90
+gfortran -c -O3 -g -Wall -fbacktrace read_ini_model.f90
+read_ini_model.f90:21:1:
+
+  read(1,*) 
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:22:1:
+
+  read(1,*) fia,teta,fib,tetb
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:23:1:
+
+  read(1,*) fig
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:24:1:
+
+  read(1,*) xpmin,xpmax,zpmin,zpmax
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:25:1:
+
+  read(1,*) val_p(iform),val_s(iform)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:26:1:
+
+  read(1,*) yan1(iform),yan2(iform)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:28:1:
+
+  call SFDEC(fia,teta,0.,xa,ya,Z,fi0,tet0)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:29:1:
+
+  call SFDEC(fib,tetb,0.,xb,yb,Z,fi0,tet0)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:33:1:
+
+  xa0(iform)=xa
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:34:1:
+
+  xb0(iform)=xb
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:35:1:
+
+  ya0(iform)=ya
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:36:1:
+
+  yb0(iform)=yb
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:38:1:
+
+  open(2,file='../../../DATA/'//ar//'/'//md//'/forms/'//fig//'.bln')
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:39:1:
+
+  read(2,*) ncurve
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:40:1:
+
+  xmin=10000
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:41:1:
+
+  xmax=-10000
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:42:1:
+
+  zmin=10000
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:43:1:
+
+  zmax=-10000
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:44:1:
+
+  do i=1,ncurve
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:45:1:
+
+   read(2,*)xcur(i),zcur(i)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:46:1:
+
+   if(xcur(i).lt.xmin) xmin=xcur(i)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:47:1:
+
+   if(xcur(i).gt.xmax) xmax=xcur(i)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:48:1:
+
+   if(zcur(i).lt.zmin) zmin=zcur(i)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:49:1:
+
+   if(zcur(i).gt.zmax) zmax=zcur(i)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:50:1:
+
+  end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:51:1:
+
+  close(2)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:56:1:
+
+  dfdx=(xpmax-xpmin)/(xmax-xmin)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:57:1:
+
+  dtdy=(zpmax-zpmin)/(zmax-zmin)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:58:1:
+
+  if(abs(xpmin-xpmax).lt.0.000001) then
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:59:1:
+
+   do i=1,ncurve
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:60:1:
+
+    anom(iform,i,1)=xcur(i)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:61:1:
+
+    anom(iform,i,2)=-zcur(i)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:63:1:
+
+   end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:64:1:
+
+   nnod(iform)=ncurve+1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:65:1:
+
+   anom(iform,nnod(iform),1)=xcur(1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:66:1:
+
+   anom(iform,nnod(iform),2)=-zcur(1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:67:1:
+
+  else
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:68:1:
+
+   do i=1,ncurve
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:69:1:
+
+    anom(iform,i,1)=xpmin+dfdx*(xcur(i)-xmin)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:70:1:
+
+    anom(iform,i,2)=zpmin+dtdy*(zcur(i)-zmin)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:71:1:
+
+   end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:72:1:
+
+   nnod(iform)=ncurve+1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:73:1:
+
+   anom(iform,nnod(iform),1)=xpmin+dfdx*(xcur(1)-xmin)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:74:1:
+
+   anom(iform,nnod(iform),2)=zpmin+dtdy*(zcur(1)-zmin)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_ini_model.f90:75:1:
+
+  end if
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+cp ../../subr/synth/vert_anom.f90 vert_anom.f90
+gfortran -c -O3 -g -Wall -fbacktrace vert_anom.f90
+vert_anom.f90:14:1:
+
+  xa=xa0(ian)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:15:1:
+
+  xb=xb0(ian)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:16:1:
+
+  ya=ya0(ian)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:17:1:
+
+  yb=yb0(ian)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:21:1:
+
+  dist=sqrt((xb-xa)*(xb-xa)+(yb-ya)*(yb-ya))
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:22:1:
+
+  sinpov=(yb-ya)/dist
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:23:1:
+
+  cospov=(xb-xa)/dist
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:25:1:
+
+  xxx=(xx-xa)*cospov+(yy-ya)*sinpov
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:26:1:
+
+  yyy=-(xx-xa)*sinpov+(yy-ya)*cospov
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:28:1:
+
+  y1=zan1(ian)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:29:1:
+
+  y2=zan2(ian)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:30:1:
+
+  if((yyy-y1)*(yyy-y2).gt.0) cycle
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:31:1:
+
+  icrup=0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:33:1:
+
+  do inod=2,nnod(ian)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:34:1:
+
+   x1=anom(ian,inod-1,1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:35:1:
+
+   x2=anom(ian,inod,1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:36:1:
+
+   z1=anom(ian,inod-1,2)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:37:1:
+
+   z2=anom(ian,inod,2)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:39:1:
+
+   if(x1.eq.x2) cycle
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:40:1:
+
+   if ((xxx-x1)*(xxx-x2).gt.0.) cycle
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:41:1:
+
+   if ((xxx-x1).eq.0.) then
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:42:1:
+
+    in=inod
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:43:4:
+
+ 667   continue
+    1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:44:1:
+
+    if(in.gt.2) then
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:45:1:
+
+     x0=anom(ian,in-2,1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:46:1:
+
+     if(x0.eq.x1) then
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:47:1:
+
+      in=in-1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:48:1:
+
+      goto 667
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:49:1:
+
+     end if
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:50:1:
+
+    else
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:51:1:
+
+     x0=anom(ian,nnod(ian)-1,1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:52:1:
+
+    end if
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:53:1:
+
+    if ((x0-x1)*(x2-x1).gt.0.) cycle
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:54:1:
+
+   end if
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:55:1:
+
+   if ((xxx-x2).eq.0.) cycle
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:56:1:
+
+   zz=z1+((z2-z1)/(x2-x1))*(xxx-x1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:58:1:
+
+   if (zz.lt.zzz) cycle
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:59:1:
+
+   icrup=icrup+1
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:60:1:
+
+  end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:61:1:
+
+  icrup2=int(icrup/2)*2
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:63:1:
+
+  if(icrup.eq.icrup2) cycle
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:64:1:
+
+  vert_anom=val_p(ian)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+vert_anom.f90:65:1:
+
+  if(ips.eq.2)vert_anom=val_s(ian)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+cp ../../subr/visual/visual_srces_stat.f90 visual_srces_stat.f90	
+gfortran -c -O3 -g -Wall -fbacktrace visual_srces_stat.f90
+visual_srces_stat.f90:9:1:
+
+  read(1,'(a8)',end=553)line
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+visual_srces_stat.f90:10:1:
+
+  if(line.eq.'AREA_CEN') goto 554
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+visual_srces_stat.f90:14:5:
+
+ pause
+     1
+Warning: Deleted feature: PAUSE statement at (1)
+visual_srces_stat.f90:45:1:
+
+  write(14,*) ' Stations (blue) and initial sources (red)'
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+visual_srces_stat.f90:47:1:
+
+  write(14,*) ' Stations (blue) and sources (red) after iteration ',it
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+visual_srces_stat.f90:50:12:
+
+ write(14,*) 1
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+visual_srces_stat.f90:56:12:
+
+ write(14,*) 2
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+visual_srces_stat.f90:61:12:
+
+ write(14,*) 3
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+visual_srces_stat.f90:63:12:
+
+ write(14,*) 0,0,0
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+visual_srces_stat.f90:67:12:
+
+ write(14,*) 3
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+visual_srces_stat.f90:72:12:
+
+ write(14,*) 2
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+visual_srces_stat.f90:74:12:
+
+ write(14,*) 8
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+visual_srces_stat.f90:76:12:
+
+ write(14,*) 0,0,255
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+visual_srces_stat.f90:81:12:
+
+ write(14,*) 3
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+visual_srces_stat.f90:84:1:
+
+  write(14,158)ar
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+visual_srces_stat.f90:85:1:
+
+  158 format('..\..\DATA\',a8,'\inidata\srces.dat')
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+visual_srces_stat.f90:87:1:
+
+  write(14,157)ar,md,it
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+visual_srces_stat.f90:88:1:
+
+  157 format('..\..\DATA\',a8,'\',a8,'\data\srces',a1,'.dat')
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+visual_srces_stat.f90:91:12:
+
+ write(14,*) 1
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+visual_srces_stat.f90:93:12:
+
+ write(14,*) 5
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+visual_srces_stat.f90:95:12:
+
+ write(14,*) 255,0,0
+            1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+cp ../../subr/rays_locate/read_topo.f90 read_topo.f90
+gfortran -c -O3 -g -Wall -fbacktrace read_topo.f90
+read_topo.f90:15:1:
+
+  read(1,*)(htopo(ifi,itet),ifi=1,nfi)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_topo.f90:20:1:
+
+  do itet=1,ntet
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_topo.f90:21:1:
+
+   htopo(ifi,itet)=htopo(ifi,itet)/1000.
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_topo.f90:22:1:
+
+  end do
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+read_topo.f90:2:14:
+
+ character*8 md,ar
+              1
+Warning: Unused variable ‘md’ declared at (1) [-Wunused-variable]
+cp ../../subr/rays_locate/read_vref.f90 read_vref.f90
+gfortran -c -O3 -g -Wall -fbacktrace read_vref.f90
+read_vref.f90:20:0:
+
+ nrefmod=iref
+ ^
+Warning: ‘iref’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+cp ../../subr/rays_locate/h_lim.f90 h_lim.f90
+gfortran -c -O3 -g -Wall -fbacktrace h_lim.f90
+h_lim.f90:10:1:
+
+  h_lim=0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+h_lim.f90:11:1:
+
+  return
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+h_lim.f90:16:1:
+
+  h_lim=0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+h_lim.f90:17:1:
+
+  return
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+h_lim.f90:22:1:
+
+  h_lim=0
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+h_lim.f90:23:1:
+
+  return
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+h_lim.f90:30:1:
+
+  f1=fmin+df*(ifi-1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+h_lim.f90:31:1:
+
+  f2=fmin+df*ifi
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+h_lim.f90:32:1:
+
+  if ((fi-f1)*(fi-f2).gt.0.) cycle
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+h_lim.f90:33:1:
+
+  exit
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+h_lim.f90:37:1:
+
+  t1=tmin+dt*(itet-1)
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+h_lim.f90:38:1:
+
+  t2=tmin+dt*itet
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+h_lim.f90:39:1:
+
+  if ((tet-t1)*(tet-t2).gt.0.) cycle
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+h_lim.f90:40:1:
+
+  exit
+ 1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+h_lim.f90:61:4:
+
+ end 
+    1
+Warning: Nonconforming tab character at (1) [-Wtabs]
+h_lim.f90:30:0:
+
+  f1=fmin+df*(ifi-1)
+ ^
+Warning: ‘f1’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+h_lim.f90:37:0:
+
+  t1=tmin+dt*(itet-1)
+ ^
+Warning: ‘t1’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+h_lim.f90:53:0:
+
+ h1=h11+(h11-h12)*(tet-t1)/(t1-t2)
+ ^
+Warning: ‘t2’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+h_lim.f90:56:0:
+
+ hhh=h1+(h1-h2)*(fi-f1)/(f1-f2)
+ ^
+Warning: ‘f2’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+rm ini3D_xyz_lin_v.f90 locate_ini3D.f90 read_3D_ini_v.f90 anom_3D_xyz_lin_v.f90 flat_sph.f90 sph_flat.f90 read_3D_mod_v.f90 velocity.f90 vrefmod.f90 decsf.f90 dispers.f90 int_best.f90 inv_svd_simple.f90 read_z_limit.f90 sfdec.f90 z_lim.f90 part_bending_hor.f90 part_bending_z.f90 part_ray.f90 straight_line.f90 trace_bending.f90 read_ini_model.f90 vert_anom.f90 visual_srces_stat.f90 read_topo.f90 read_vref.f90 h_lim.f90	
+gfortran -o locate.exe -O3 -g -Wall -fbacktrace ini3D_xyz_lin_v.o locate_ini3D.o read_3D_ini_v.o anom_3D_xyz_lin_v.o flat_sph.o sph_flat.o read_3D_mod_v.o velocity.o vrefmod.o decsf.o dispers.o int_best.o inv_svd_simple.o read_z_limit.o sfdec.o z_lim.o part_bending_hor.o part_bending_z.o part_ray.o straight_line.o trace_bending.o read_ini_model.o vert_anom.o visual_srces_stat.o read_topo.o read_vref.o h_lim.o
+rm ini3D_xyz_lin_v.o locate_ini3D.o read_3D_ini_v.o anom_3D_xyz_lin_v.o flat_sph.o sph_flat.o read_3D_mod_v.o velocity.o vrefmod.o decsf.o dispers.o int_best.o inv_svd_simple.o read_z_limit.o sfdec.o z_lim.o part_bending_hor.o part_bending_z.o part_ray.o straight_line.o trace_bending.o read_ini_model.o vert_anom.o visual_srces_stat.o read_topo.o read_vref.o h_lim.o

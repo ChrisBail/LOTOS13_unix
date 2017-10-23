@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="subr">
+      <UniqueIdentifier>{d7088353-7c79-4333-892f-e2f80153f6b1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\subr\invers\nolet.f90">
+      <Filter>subr</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\subr\rays_locate\vrefmod.f90">
+      <Filter>subr</Filter>
+    </CustomBuild>
+    <CustomBuild Include="invers.f90" />
+  </ItemGroup>
+</Project>

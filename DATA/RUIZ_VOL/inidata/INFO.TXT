@@ -1,0 +1,5 @@
+  Number of stations=          88
+  Number of events:       71812
+  Total rays:      961957
+  P-rays:      500025
+  S-rays:      461932
